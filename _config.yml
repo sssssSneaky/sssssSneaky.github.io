@@ -1,0 +1,22 @@
+# Site settings
+title: "sssssSneaky"
+description: "Personal blog"
+url: "https://sssssSneaky.github.io"
+baseurl: ""
+
+# Author
+author: "sssssSneaky"
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Exclude/Include
+exclude:
+  - README.md
+  - node_modules
+  - vendor
+
+include:
+  - _pages
+

@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  /* outline: 3px solid green; */
+}
+
+pre {
+  max-width: 769px;
+  white-space: pre-wrap;
+}
+
+img {
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 769px;
+  padding: 0 12px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
