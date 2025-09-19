@@ -12,7 +12,7 @@
   <div class="bg-rotating"></div>
   <div class="container">
     {% include nav-menu.html %}
-    <pre><center>==// {{ page.title }} //==</center></pre>
+    <pre><center>~ {{ page.title }} ~</center></pre>
     {{ content }}
   </div>
 
@@ -40,12 +40,17 @@
     }
 
     function setTheme(theme) {
+	  let style = document.documentElement.style;
       if (theme === "dark") {
-        document.documentElement.style.setProperty("--background-color", "black");
-        document.documentElement.style.setProperty("--text-color", "greenyellow");
+        style.setProperty("--background-color", "black");
+        style.setProperty("--text-color", "greenyellow");
+		style.setProperty("--link-color", "lightpink");
+		style.setProperty("--visited-link-color", "lightgreen");
       } else {
-        document.documentElement.style.setProperty("--background-color", "white");
-        document.documentElement.style.setProperty("--text-color", "black");
+        style.setProperty("--background-color", "white");
+        style.setProperty("--text-color", "black");
+		style.setProperty("--link-color", "blue");
+		style.setProperty("--visited-link-color", "purple");
       }
     }
   </script>

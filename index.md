@@ -4,5 +4,8 @@ title: Index
 ---
 
 <pre>
-# ls -Rl ~/Documents/
+# find . -type f -name "*.txt" 
+{% for post in site.posts %}
+<a href="{{post.url}}">./{{post.category}}/{{ post.title }}.txt</a>
+{% endfor %}
 </pre>

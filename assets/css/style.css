@@ -13,9 +13,21 @@ pre {
 }
 
 img {
-  border-radius: 10%;
+  border-radius: 5%;
   display: block;
   margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-link-color);
+}
+
+.page-break {
+  page-break-after: always;
 }
 
 .container {
@@ -38,5 +50,13 @@ img {
 
   .nav-menu {
     display: none;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:visited {
+    color: black;
   }
 }
